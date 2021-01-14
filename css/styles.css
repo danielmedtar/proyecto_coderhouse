@@ -179,6 +179,9 @@ textarea::placeholder {
       font-size: 1.6rem;
       font-family: "Chau Philomene One", sans-serif; } }
 
+#carouselExampleCaptions.ancho-carousel {
+  width: 30%; }
+
 div.carousel-curso {
   background-color: unset;
   padding-bottom: 110px;
