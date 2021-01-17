@@ -447,8 +447,8 @@ textarea::placeholder {
     margin-right: 0; } }
 
 .labelTema input {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   margin-right: 8px; }
 
 @media (min-width: 768px) {
