@@ -30,7 +30,8 @@ h2 {
   color: #5296A5;
   text-align: center;
   font-size: 2.5rem;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin-top: 30px; }
 
 h3 {
   font-family: "Chau Philomene One", sans-serif;
@@ -131,6 +132,9 @@ textarea::placeholder {
 .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
   color: #5ea7b7; }
 
+.navbar-toggler {
+  background-color: rgba(130, 221, 240, 0.4); }
+
 .navbar, .navbar-expand-lg, .navbar-light, .bg-light {
   background-image: url(../images/fondo2.png); }
 
@@ -180,7 +184,11 @@ textarea::placeholder {
       font-family: "Chau Philomene One", sans-serif; } }
 
 #carouselExampleCaptions.ancho-carousel {
-  width: 30%; }
+  width: 50%; }
+
+@media (min-width: 768px) {
+  #carouselExampleCaptions.ancho-carousel {
+    width: 35%; } }
 
 div.carousel-curso {
   background-color: unset;
@@ -247,8 +255,12 @@ div.carousel-inner:last-child h5 {
   margin-bottom: 40px; }
 
 .redes {
-  font-size: 5rem;
+  font-size: 4rem;
   text-align: center; }
+
+@media (min-width: 768px) {
+  .redes {
+    font-size: 5rem; } }
 
 .redes a {
   text-decoration: none;
@@ -257,6 +269,15 @@ div.carousel-inner:last-child h5 {
 
 .redes a:hover {
   color: #5296A5; }
+
+.siteBy {
+  font-family: "Chau Philomene One", sans-serif;
+  font-size: 1.6rem;
+  text-align: center;
+  margin-top: 10px; }
+
+.siteBy a {
+  color: #1d1e18; }
 
 .item__container__parrafos {
   color: #1d1e18;
@@ -308,7 +329,7 @@ div.carousel-inner:last-child h5 {
 
 .boton:hover {
   background-color: #FF6f59;
-  transform: rotate(-10deg); }
+  transition: all .5s; }
 
 .boton a {
   text-decoration: none;
@@ -362,7 +383,6 @@ div.carousel-inner:last-child h5 {
 
 .container__botones__sobremi-boton:hover {
   background-color: #FF6f59;
-  transform: scale(1, 1.3);
   transition: all .5s; }
 
 .container__botones__sobremi-boton a {
@@ -377,46 +397,62 @@ div.carousel-inner:last-child h5 {
   display: flex; }
 
 /*SERVICIOS*/
+@media (min-width: 768px) {
+  .containerServicios {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 40px; } }
+
 .servicios {
-  background-color: rgba(130, 221, 240, 0.4);
   width: 80%;
-  text-align: center;
   margin: 0 auto;
-  padding: 10px;
-  border-radius: 40px;
   margin-bottom: 30px; }
+  .servicios h3 {
+    font-size: 2.5rem; }
+  .servicios p {
+    font-size: 2rem;
+    color: #1d1e18;
+    font-family: "Chau Philomene One", sans-serif; }
+  .servicios i {
+    font-size: 2.5rem;
+    margin-right: 10px; }
+
+.manejo {
+  text-align: center; }
+
+.listaServicios h3 {
+  font-size: 2.5rem; }
+
+.listaServicios ul {
+  color: #1d1e18; }
+
+.listaServicios li {
+  margin-bottom: 15px;
+  font-size: 2rem; }
 
 @media (min-width: 768px) {
   .servicios {
-    width: 20%; } }
-
-.servicios p {
-  color: #1d1e18;
-  text-align: center;
-  list-style: none;
-  font-size: 3rem;
-  font-family: "Chau Philomene One", sans-serif; }
-
-.servicios i {
-  font-size: 3.5rem;
-  margin-right: 10px; }
-
-.manejo {
-  width: 80%; }
-
-@media (min-width: 768px) {
-  .manejo {
-    width: 50%; } }
-
-.manejo p {
-  font-size: 2.5rem; }
-
-.valor li {
-  color: #1d1e18;
-  text-align: left;
-  list-style: initial;
-  font-size: 2rem;
-  line-height: 2; }
+    flex-direction: column;
+    text-align: left; }
+    .servicios h3 {
+      font-size: 3rem; }
+    .servicios p {
+      color: #1d1e18;
+      text-align: center;
+      font-size: 2rem;
+      font-family: "Chau Philomene One", sans-serif; }
+    .servicios i {
+      font-size: 3rem;
+      margin-right: 10px; }
+  .listaServicios h3 {
+    font-size: 3rem; }
+  .listaServicios ul {
+    color: #1d1e18;
+    text-align: center; }
+  .listaServicios li {
+    margin-bottom: 10px;
+    font-size: 2rem; } }
 
 .container__curso {
   display: flex;
@@ -424,7 +460,6 @@ div.carousel-inner:last-child h5 {
   align-items: center; }
 
 .cardcurso {
-  background-color: rgba(130, 221, 240, 0.4);
   width: 80%;
   margin-bottom: 40px;
   padding: 10px;
@@ -451,7 +486,6 @@ div.carousel-inner:last-child h5 {
   text-align: center; }
 
 .item__container-card {
-  background-color: rgba(130, 221, 240, 0.4);
   width: 80%;
   margin-bottom: 40px;
   padding: 10px;
@@ -529,8 +563,7 @@ div.carousel-inner:last-child h5 {
   margin-bottom: 20px; }
 
 .botonForm:hover {
-  transform: skew(10deg, 10deg);
-  transition: .5s;
+  transition: all .5s;
   background-color: #FF6f59; }
 
 .mensaje {
