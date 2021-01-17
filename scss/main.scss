@@ -1,5 +1,3 @@
-/*VARIABLES*/
-/**COLORES**/
 $azul-claro: #82DDF0;
 $azul-oscuro: #5296A5;
 $transparente: rgba(130, 221, 240, .4);
@@ -7,9 +5,9 @@ $rojo: #DB504A;
 $rosa: #FF6f59;
 $negro: #1d1e18;
 
-/*FUENTES*/
 $cursiva: 'Caveat', cursive;
 $recta: 'Chau Philomene One', sans-serif;
+
 /*Etiquetas*/
 html {
     font-size: 62.5%;
@@ -41,50 +39,13 @@ h2 {
     text-align: center;
     font-size: 2.5rem;
     text-transform: uppercase;
-}
-h3 {
-    font-family: $recta;
-    font-size: 2rem;
-    text-align: center;
-    letter-spacing: 2px;
-    color: $rojo;
-    margin-bottom: 20px;
-}
-h5 {
-    font-size: 1.4rem;
-    font-family: $recta;
-}
-@media (min-width: 768px) {
-    h5 {
-        font-size: 1.6rem;
-        font-family: $recta;
-    }
+    margin-top: 30px;
 }
 img {
     max-width: 100%;
 }
 footer {
     margin-top: 80px;
-}
-ol {
-    font-size: 1.8rem;
-    text-align: center;
-    color: $azul-oscuro;
-    font-family: $recta;
-    list-style: none;
-    margin-bottom: 60px;
-}
-ol li {
-    margin-bottom: 10px;
-}
-ul {
-    font-family: $recta;
-    list-style: none;
-    color: $azul-oscuro;
-    font-size: 1.8rem;
-}
-ul li {
-    line-height: 1.6;
 }
 form {
     width: 80%;
@@ -95,54 +56,99 @@ form {
 }
 @media (min-width: 768px) {
     form {
-        width: 40%;
+        width: 50%;
     }
 }
 fieldset {
     margin-bottom: 30px;
-    border-radius: 30px;
+    border-radius: 10px;
     min-width: revert;
     padding: revert;
     border: revert;
+}
+@media (min-width: 768px) {
+    fieldset {
+        padding: 20px;
+    }
 }
 legend {
     font-size: 1.8rem;
     color: $rojo;
     width: revert;
 }
+@media (min-width: 768px) {
+    legend {
+        font-size: 2.5rem;
+    }
+}
 label {
     font-size: 1.4rem;
     color: $azul-oscuro;
 }
+@media (min-width: 768px) {
+    label {
+        font-size: 2rem;
+    }
+}
 input, select {
     font-size: revert;
+}
+@media (min-width: 768px) {
+    input::placeholder {
+        font-size: 1.5rem;
+    }
 }
 form p {
     font-size: 1.6rem;
     color: $azul-oscuro;
 }
+@media (min-width: 768px) {
+    form p {
+    font-size: 2rem;
+    }
+}
 option {
     color: $azul-oscuro;
 }
+@media (min-width: 768px) {
+    option {
+        font-size: 1.8rem;
+    }
+}
 textarea {
-    border: solid 1px $rosa;
-    border-radius: 30px;
+    border-radius: 10px;
     width: 80%;
+    margin: 20px;
+    font-size: 1.6rem;
+    color: $azul-oscuro;
+}
+@media (min-width: 768px) {
+    textarea {
+        font-size: 2rem;
+        color: $azul-oscuro;
+    }
 }
 textarea::placeholder {
     text-align: center;
 }
-
+@media (min-width: 768px) {
+    textarea::placeholder {
+        font-size: 2rem;
+    }
+}
 /*BOOTSTRAP*/
 #navbarNavDropdown {
     justify-content: center;
     margin-top: 20px;
 }
 #navbarNavDropdown li a:hover {
-    color: #5ea7b7;
+    color: $azul-oscuro;
 }
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
-    color: #5ea7b7;
+    color: $azul-oscuro;
+}
+.navbar-toggler {
+    background-color: $transparente;
 }
 .navbar, .navbar-expand-lg, .navbar-light, .bg-light {
     background-image: url(../images/fondo2.png);
@@ -162,79 +168,20 @@ textarea::placeholder {
 }
 /*CARRUSEL*/
 #carouselExampleCaptions {
-    width: 70%;
-    margin: auto;
+    width: 100%;
+    margin-top: 30px;
 }
 @media (min-width: 768px) {
     #carouselExampleCaptions {
-        width: 40%;
+        width: 90%;
         margin: auto;
     }
 }
-.carousel-inner {
-    border-radius: 50px;
-}
-.carousel-caption {
-    display: block!important;
-    background-color: $azul-oscuro;
-    opacity: .8;
-    border-radius: 20px;
-    color: #ffffff;
-            p {
-            font-size: 1.4rem;
-            font-family: $recta;
-            }
-        }
-@media (min-width: 768px) {
-    .carousel-caption {
-        background-color: $azul-oscuro;
-        opacity: .8;
-        border-radius: 20px;
-        color: #ffffff;
-              p {
-                  font-size: 1.6rem;
-                  font-family: $recta;
-              }
-      }
-}
-div.carousel-curso {
-    background-color: unset;
-    padding-bottom: 110px;
-    color: #ffffff;
-    opacity: unset;
-    h5 {
-        display: none;
-    }
-    p {
-        display: none;
-    }
-}
-@media (min-width: 768px) {
-    div.carousel-curso {
-        padding-bottom: 200px;
-        h5 {
-            display: block;
-        }
-        p {
-            display: block;
-        }
-    }
-}
-div.carousel-inner:last-child h5 {
-    color: $negro;
-}
-.carousel-indicators li {
+.carousel-indicators {
     display: none;
 }
-.carousel-img img {
-    width: 200px;
-    height: 200px;
-}
-@media (min-width: 768px){
-    .carousel-img img {
-        width: 300px;
-        height: 300px;
-    }
+.carousel-inner {
+    border-radius: 20px;
 }
 /*CLASES PROPIAS*/
 .container-principal {
@@ -248,29 +195,29 @@ div.carousel-inner:last-child h5 {
     display: block;
     margin: auto;
 }
-.imagenes {
-    height: 550px;
-    width: 399px;
-    margin-bottom: 40px;
+@media (min-width: 768px) {
+    .imagenes {
+    width: 90%;
+    }
 }
 .containerImagenCentrada {
     display: flex;
     justify-content: center;
-    margin-top: 60px;
+    margin-top: 30px;
 }
 @media (min-width: 768px) {
     .containerImagenCentrada {
         margin-top: 0;
     }
 }
-.imagen-curso {
-    height: 550px;
-    width: 650px;
-    margin-bottom: 40px;
-}
 .redes {
-    font-size: 5rem;
+    font-size: 4rem;
     text-align: center;
+}
+@media (min-width: 768px) {
+    .redes {
+        font-size: 5rem;
+    }
 }
 .redes a {
     text-decoration: none;
@@ -280,11 +227,33 @@ div.carousel-inner:last-child h5 {
 .redes a:hover {
     color: $azul-oscuro;
 }
-.item__container__parrafos {
+.siteBy {
+    font-family: $recta;
+    font-size: 1.6rem;
+    text-align: center;
+    margin-top: 10px;
+}
+.siteBy a {
     color: $negro;
-    font-size: 1.8rem;
+}
+.containerParrafo {
+    margin-top: 50px;
+    width: 100%;
+}
+.item__container__parrafos {
+    background-color: $transparente;
+    color: $negro;
     font-family: $recta;
     font-weight: lighter;
+    text-align: center;
+    font-size: 2rem;
+    padding: 0 30px;
+}
+@media (min-width: 768px) {
+    .item__container__parrafos {
+        font-size: 3rem;
+        padding: 0 40px;
+    }
 }
 .menu {
     list-style: none;
@@ -295,7 +264,7 @@ div.carousel-inner:last-child h5 {
 }
 @media (min-width: 768px) {
     .menu {
-        font-size: 3.6rem;
+        font-size: 3.5rem;
     }
 }
 .menu li {
@@ -326,13 +295,18 @@ div.carousel-inner:last-child h5 {
     background-color: $rojo;
     border: none;
     padding: 10px;
-    border-radius: 20px;
-    font-size: 2.6rem;
+    border-radius: 10px;
+    font-size: 2rem;
     margin-top: 60px;
+}
+@media (min-width: 768px) {
+    .boton {
+        font-size: 2.6rem;
+    }
 }
 .boton:hover {
     background-color: $rosa;
-    transform: rotate(-10deg);
+    transition: all .5s;
 }
 .boton a {
     text-decoration: none;
@@ -347,31 +321,28 @@ div.carousel-inner:last-child h5 {
     text-align: center;
     font-size: 3rem;
 }
-.item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 60px;
-}
-@media (min-width: 768px) {
-    .item {
-        flex-direction: row;
-        justify-content: space-around;
-    }
-}
-.item__container {
-    text-align: center;
-}
-.item__container.item__container-card {
-    margin: auto;
-}
-@media (min-width: 768px) {
-    .item__container.item__container-card {
-        width: 30%;
-        padding-top: 30px;
-    }
-}
 /*SOBRE MI*/
+.item__container__sobremi {
+    margin-top: 30px;
+    background-color: $transparente;
+    width: 100%;
+    padding: 20px 40px;
+}
+@media (min-width: 768px) {
+    .item__container__sobremi {
+        padding: 20px 80px;
+    }
+}
+.item__container__sobremi__parrafos {
+    font-family: $recta;
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+@media (min-width: 768px) {
+    .item__container__sobremi__parrafos {
+        font-size: 2.3rem;
+    }
+}
 .container__botones__sobremi {
     margin-top: 60px;
     display: flex;
@@ -382,13 +353,17 @@ div.carousel-inner:last-child h5 {
     background-color: $rojo;
     border: none;
     padding: 10px;
-    border-radius: 20px;
-    font-size: 2.6rem;
+    border-radius: 10px;
+    font-size: 2rem;
     margin-right: 30px;
+}
+@media (min-width: 768px) {
+    .container__botones__sobremi-boton {
+        font-size: 2.6rem;
+    }
 }
 .container__botones__sobremi-boton:hover {
     background-color: $rosa;
-    transform: scale(1,1.3);
     transition: all .5s;
 }
 .container__botones__sobremi-boton a {
@@ -396,136 +371,97 @@ div.carousel-inner:last-child h5 {
     color: #FFFFFF;
     font-weight: bold;
 }
-.sobremi-boton-1 {
+.container__botones__sobremi-boton:last-of-type{
     margin-right: 0;
 }
-.container-redes {
-    display: flex;
-}
 /*SERVICIOS*/
-.servicios {
+.containerServicios {
     background-color: $transparente;
-    width: 80%;
-    text-align: center;
-    margin: 0 auto;
-    padding: 10px;
-    border-radius: 40px;
-    margin-bottom: 30px;
+    width: 100%;
+    padding: 40px 40px 40px 0;
+    margin-top: 30px;
 }
-@media (min-width: 768px) {
-    .servicios {
-        width: 20%;
-    }
-}
-.servicios p {
-    color: $negro;
-    text-align: center;
-    list-style: none;
-    font-size: 3rem;
+.listaServicios {
     font-family: $recta;
-}
-.servicios i {
-    font-size: 3.5rem;
-    margin-right: 10px;
-}
-.manejo {
-    width: 80%;
+        ol {
+            font-size: 2rem;
+            list-style: none;
+            color: $rosa;
+        }
+        ol li {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        ul li {
+            font-size: 1.8rem;
+            color: $negro;
+            list-style: none;
+            text-align: left;
+            margin-bottom: 10px;
+        }
+        ul {
+            margin-bottom: 20px;
+        }
 }
 @media (min-width: 768px) {
-    .manejo {
-        width: 50%;
+    .containerServicios {
+        padding: 20px 80px;
+        margin-top: 0;
+    }
+    .listaServicios {
+        font-family: $recta;
+            ol {
+                font-size: 3rem;
+            }
+            ul li {
+                font-size: 2.3rem;
+            }
     }
 }
-.manejo p {
-    font-size: 2.5rem;
+.botonServicios {
+    margin-right: 30px;
 }
-.valor li {
-    color: $negro;
-    text-align: left;
-    list-style: initial;
+.botonServicios:last-of-type {
+    margin-right: 0;
+}
+/*PACKS*/
+.container__pack {
+    background-color: $transparente;
+    width: 100%;
+    padding: 20px 40px;
+    margin-top: 60px;
+        p {
+            font-family: $recta;
+            color: $negro;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+    }
+
+.container__pack p:last-child {
+    margin-bottom: 0;
+}
+@media (min-width: 768px) {
+    .container__pack {
+        padding: 20px 80px;
+            p {
+                font-size: 2.3rem;
+            }
+    }
+}
+/*CONTACTO*/
+.parrafo__form {
+    font-family: $recta;
+    letter-spacing: 2px;
+    color: $azul-oscuro;
+    text-align: center;
     font-size: 2rem;
-    line-height: 2;
-}
-.container__curso {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.cardcurso {
-    background-color: $transparente;
-    width: 80%;
-    margin-bottom: 40px;
-    padding: 10px;
-    border-radius: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-transform: uppercase;
+    margin: 30px 0;
 }
 @media (min-width: 768px) {
-    .cardcurso {
-        width: 30%;
-    }
-}
-.cardcurso li {
-    color: $negro;
-}
-.imagen-curso {
-    width: 601px;
-    height: 450px;
-}
-.container__curso__miniCurso {
-    color: $rojo;
-    font-size: 3rem;
-    font-family: $recta;
-    text-align: center;
-}
-.item__container-card {
-    background-color: $transparente;
-    width: 80%;
-    margin-bottom: 40px;
-    padding: 10px;
-    border-radius: 40px;
-}
-@media (min-width: 768px) {
-    .item__container-card {
-        width: 40%;
-    }
-}
-.item__container-card li {
-    list-style: initial;
-    color: $negro;
-}
-/*CURSOS*/
-.parrafoCursos {
-    color: $rojo;
-    font-size: 1.8rem;
-    font-family: $recta;
-    text-align: center;
-    margin-top: 40px;
-}
-@media (min-width: 768px) {
-    .parrafoCursos {
-        font-size: 2.5rem;
-    }
-}
-.parrafoCursos:last-of-type {
-    margin-top: 0;
-}
-.cursos-chico {
-    font-size: 1.6rem;
-}
-@media (min-width: 768px) {
-    .cursos-chico {
-        display: none;
-}
-}
-.cursos-grande {
-    display: none;
-}
-@media (min-width: 768px) {
-    .cursos-grande {
-        display: block;
-        font-size: 2.5rem;
+    .parrafo__form {
+        font-size: 2.3rem;
     }
 }
 .labelDatos {
@@ -549,24 +485,43 @@ div.carousel-inner:last-child h5 {
     width: 20px;
     height: 20px;
 }
+@media (min-width: 768px) {
+    .formJuntos {
+        display: flex;
+        justify-content: space-between;
+    }
+}
 .botonForm {
     font-family: $cursiva;
     background-color: $rojo;
     color: #FFFFFF;
     border: none;
     padding: 10px;
-    border-radius: 20px;
-    font-size: 2.6rem;
+    border-radius: 10px;
+    font-size: 2rem;
     cursor: pointer;
     margin-right: 20px;
     margin-bottom: 20px;
 }
+@media (min-width: 768px) {
+    .botonForm {
+        font-size: 2.6rem;
+    }
+}
 .botonForm:hover {
-    transform: skew(10deg,10deg);
-    transition: .5s;
+    transition: all .5s;
     background-color: $rosa;
 }
 .mensaje {
     display: flex;
     justify-content: center;
+}
+.parrafo_contacto {
+    margin-top: 30px;
+}
+@media (min-width: 768px) {
+    .parrafo_contacto {
+        font-size: 3rem;
+        margin-top: 30px;
+    }
 }

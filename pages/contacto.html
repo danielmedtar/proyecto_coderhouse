@@ -43,7 +43,7 @@
           </li>
           
           <li class="nav-item">
-            <a class="nav-link" href="mini_cursos.html">Mini Cursos</a>
+            <a class="nav-link" href="packs.html">Packs</a>
           </li>
           
           <li class="nav-item active dropdown">
@@ -61,12 +61,11 @@
   </header>
 
   <div class="container-principal">
-    <main>
       <div class="containerImagenCentrada">
-        <img src="../images/contacto.jpg" alt="contacto" class="imagenes">
+        <img src="../images/10.png" alt="contacto" class="imagenes">
       </div>
         
-      <h2 class="titulo-secundario">Completa el siguiente formulario y te contactaré a la brevedad.</h2>
+      <p class="parrafo__form">Completa el siguiente formulario y te contactaré a la brevedad.</p>
 
       <form>
         <fieldset>
@@ -89,55 +88,59 @@
             </div>
         </fieldset>
 
-        <fieldset>
-          <legend>Temática</legend>
-          <p>¿Sobre qué quieres hablar?</p>
-          <div class="labelTema">
-            <label for="redes">Manejo de redes</label>
-            <input type="checkbox" id="redes">
+        <div class="formJuntos">
+          <fieldset>
+            <legend>Temática</legend>
+            <p>¿Sobre qué quieres hablar?</p>
+          
+            <div class="labelTema">
+              <label for="redes">Manejo de redes</label>
+              <input type="checkbox" id="redes">
 
-            <label for="cursos">Mini cursos personalizados</label>
-            <input type="checkbox" id="cursos">
+              <label for="cursos">Asesorías</label>
+              <input type="checkbox" id="cursos">
 
-            <label for="todo">Ambas</label>
-            <input type="checkbox" id="todo">
-          </div>
-        </fieldset>
+              <label for="todo">Ambas</label>
+              <input type="checkbox" id="todo">
+            </div>
+          </fieldset>
 
-        <fieldset>
-          <legend>Tipo de negocio</legend>
-          <label for="negocio">¿Cuál es tu tipo de negocio?</label><br><br>
+          <fieldset>
+            <legend>Tipo de negocio</legend>
+            <label for="negocio">¿Cuál es tu tipo de negocio?</label><br><br>
                         
-          <select id="negocio">
-            <option disabled selected>--Seleccione una opción--</option>
-            <option>Emprendimiento</option>
-            <option>PYME</option>
-            <option>Gran empresa</option>
-          </select>
-        </fieldset>
+            <select id="negocio">
+              <option disabled selected>--Seleccione una opción--</option>
+              <option>Emprendimiento</option>
+              <option>PYME</option>
+              <option>Gran empresa</option>
+            </select>
+          </fieldset>
+        </div>
+        
+          <fieldset>
+            <legend>Cuéntame sobre tu negocio</legend>
+          
+            <div class="mensaje">
+              <textarea cols="60" rows="10" placeholder="Tu comentario o mensaje..."></textarea>
+            </div>
+          </fieldset>
 
-        <fieldset>
-          <legend>Cuéntame más</legend>
-          <div class="mensaje">
-            <textarea id="" cols="60" rows="10" placeholder="Tu comentario o mensaje..."></textarea>
-          </div>
-        </fieldset>
-
-        <input type="submit" value="Enviar" class="botonForm">
-        <input type="reset" value="Limpiar formulario" class="botonForm">
+          <input type="submit" value="Enviar" class="botonForm">
+          <input type="reset" value="Limpiar formulario" class="botonForm">
       </form>
-    </main>
 
-    <p class="item__container__parrafos item__container__parrafos-contacto">Con amor, Ane...</p>
+      <p class="item__container__parrafos parrafo_contacto">Con amor, Ane...</p>
 
-    <footer>
-      <h2 class="titulo-secundario">Mis redes sociales</h2>
+      <footer>
+        <h2 class="titulo-secundario">Mis redes sociales</h2>
         <nav class="redes">
           <a href="https://www.facebook.com/aneplanner/" target="_blank"><i class="fab fa-facebook"></i></a>
           <a href="https://www.instagram.com/aneplanner/" target="_blank"><i class="fab fa-instagram"></i></a>
           <a href="https://wa.me/542216032821" target="_blank"><i class="fab fa-whatsapp"></i></a>
         </nav>
-    </footer>
+        <p class="siteBy">Desarrollado por<a href="https://danielmedtar.github.io/" target="_blank"> Daniel Medina &copy;</a></p>
+      </footer>
   </div>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
