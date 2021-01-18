@@ -361,7 +361,7 @@ textarea::placeholder {
   font-family: "Caveat", cursive;
   background-color: #DB504A;
   border: none;
-  padding: 10px;
+  padding: 8px;
   border-radius: 10px;
   font-size: 2rem;
   margin-right: 30px; }
@@ -511,7 +511,7 @@ textarea::placeholder {
   background-color: #DB504A;
   color: #FFFFFF;
   border: none;
-  padding: 10px;
+  padding: 8px;
   border-radius: 10px;
   font-size: 2rem;
   cursor: pointer;
