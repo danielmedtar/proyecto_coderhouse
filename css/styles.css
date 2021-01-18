@@ -21,15 +21,6 @@ h1.titulo-principal {
     font-size: 6rem;
     margin-bottom: 0; } }
 
-h2 {
-  font-family: "Chau Philomene One", sans-serif;
-  letter-spacing: 2px;
-  color: #5296A5;
-  text-align: center;
-  font-size: 2.5rem;
-  text-transform: uppercase;
-  margin-top: 30px; }
-
 img {
   max-width: 100%; }
 
@@ -185,6 +176,15 @@ textarea::placeholder {
 @media (min-width: 768px) {
   .containerImagenCentrada {
     margin-top: 0; } }
+
+.tituloFooter {
+  font-family: "Chau Philomene One", sans-serif;
+  letter-spacing: 2px;
+  color: #5296A5;
+  text-align: center;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin-top: 30px; }
 
 .redes {
   font-size: 4rem;
