@@ -431,29 +431,27 @@ textarea::placeholder {
   border: solid 1px #FF6f59;
   border-radius: 5px; }
 
-.labelTema {
+.containerTema {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  margin-bottom: 20px; }
+
+.containerTema:last-of-type {
+  margin-bottom: 0; }
+
+.containerTema label {
+  font-size: 1.8rem;
+  margin-right: 10px;
+  margin-left: 20px; }
 
 @media (min-width: 768px) {
-  .labelTema {
-    flex-direction: column; } }
+  .containerTema label {
+    font-size: 2rem;
+    margin-right: 10px; } }
 
-.labelTema label {
-  margin-right: 8px; }
-
-@media (min-width: 768px) {
-  .labelTema label {
-    margin-right: 0; } }
-
-.labelTema input {
+.containerTema input {
   width: 20px;
-  height: 20px;
-  margin-right: 8px; }
-
-@media (min-width: 768px) {
-  .labelTema input {
-    margin-right: 0; } }
+  height: 20px; }
 
 @media (min-width: 768px) {
   .formJuntos {
