@@ -587,6 +587,10 @@ textarea::placeholder {
     justify-content: center;
 }
 .parrafo_contacto {
+    background-color: $transparente;
+    font-family: $recta;
+    font-size: 2.5rem;
+    text-align: center;
     margin-top: 30px;
 }
 @media (min-width: 768px) {

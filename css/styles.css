@@ -531,6 +531,10 @@ textarea::placeholder {
   justify-content: center; }
 
 .parrafo_contacto {
+  background-color: rgba(130, 221, 240, 0.4);
+  font-family: "Chau Philomene One", sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
   margin-top: 30px; }
 
 @media (min-width: 768px) {
