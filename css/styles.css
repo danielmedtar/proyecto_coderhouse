@@ -367,14 +367,15 @@ textarea::placeholder {
   font-family: "Caveat", cursive;
   background-color: #DB504A;
   border: none;
-  padding: 8px;
+  padding: 6px;
   border-radius: 10px;
   font-size: 2rem;
   margin-right: 30px; }
 
 @media (min-width: 768px) {
   .container__botones__sobremi-boton {
-    font-size: 2.6rem; } }
+    font-size: 2.6rem;
+    padding: 8px; } }
 
 .container__botones__sobremi-boton:hover {
   background-color: #FF6f59;
