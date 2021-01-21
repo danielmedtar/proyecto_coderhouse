@@ -137,6 +137,12 @@ textarea::placeholder {
     width: 30px;
     height: 30px; } }
 
+.flecha-index {
+  background-color: #1d1e18; }
+
+.flecha-packs {
+  background-color: #FF6f59; }
+
 #navbarNavDropdown {
   justify-content: center;
   margin-top: 20px; }
