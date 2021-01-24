@@ -158,10 +158,19 @@ textarea::placeholder {
 .navbar, .navbar-expand-lg, .navbar-light, .bg-light {
   background-image: url(../images/fondo2.png); }
 
+@media (max-width: 425px) {
+  .navbar, .navbar-expand-lg, .navbar-light, .bg-light {
+    text-align: left; } }
+
 .dropdown-menu {
   text-align: center;
   font-size: 1.8rem;
   background-image: url(../images/fondo2.png); }
+
+@media (max-width: 425px) {
+  .dropdown-menu {
+    text-align: left;
+    border: none; } }
 
 @media (min-width: 768px) {
   .dropdown-menu {
@@ -275,6 +284,10 @@ textarea::placeholder {
 @media (min-width: 768px) {
   .menu {
     font-size: 3.5rem; } }
+
+@media (max-width: 425px) {
+  .menu {
+    text-align: left; } }
 
 .menu li {
   display: block; }
